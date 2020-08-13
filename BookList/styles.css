@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.wrapper{
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+.wrapper h1{
+    font-size: 2rem;
+    padding: 1rem 0;
+    color:brown
+}
+input[type=text]{
+    padding: 0.3rem 0;
+    width: 100%;
+    margin: 1rem  0;
+
+    
+}
+
+label{
+    margin: 1rem 0;
+
+}
+table{
+    padding: 1rem;
+    width: 100%;
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+input[type=submit]{
+    padding: 0.5rem 2rem;
+    text-align: center;
+    background-color: brown;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+tr{
+    border-radius: 10px;
+}
+th,td{
+    padding: 1rem;
+    text-align: center;
+}
+.delete{
+    color:white;
+    padding:0.1rem 0.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: red;
+}
+.alert{
+    padding: 1rem 0;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+.success{
+    background-color: green;
+    color:white ;
+    
+}
+.danger{
+    background-color: red;
+    color:white ;
+}
