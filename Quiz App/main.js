@@ -6,7 +6,7 @@ questionCounter = 0;
 const availableQuestions = [
   {
     question: "Capital of America",
-    answer: "4",
+    answer: "2",
     1: "India",
     2: "Washington",
     3: "Africa",
@@ -15,17 +15,17 @@ const availableQuestions = [
   {
     question: "Capital of Africa",
     answer: "2",
-    1: "India",
-    2: "Washington",
-    3: "Africa",
-    4: "China",
+    1: "Australia",
+    2: "Capetown",
+    3: "China",
+    4: "Zambia",
   },
   {
     question: "Capital of India",
     answer: "1",
-    1: "India",
-    2: "Washington",
-    3: "Africa",
+    1: "Delhi",
+    2: "USA",
+    3: "Zambia",
     4: "China",
   },
 ];
