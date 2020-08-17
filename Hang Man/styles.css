@@ -1,0 +1,89 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: #34495e;
+    color:white;
+}
+h1{
+    margin:3rem;
+    text-align: center;
+
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width:800px;
+    height: 80vh;
+    max-width: 80%;
+}
+#wrong-letters-container{
+    position: absolute;
+    top:50%;
+    right:10%;
+  }
+.figure{
+    fill:transparent;
+    stroke:#fff;
+    stroke-width: 4px;
+}
+.figure-part{
+    display: none;
+}
+.word{
+    display: flex;
+    position: absolute;
+    bottom: 15%;
+
+}
+.letter{
+    border-bottom: 1px solid #2980b9;
+    margin:10px;
+}
+.popup-container{
+    background-color: rgba(0,0,0,0.3);
+    position: fixed;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+}
+.popup{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+
+    background-color: #2980b9;
+   padding:2rem;
+   text-align: center;
+
+}
+.popup button{
+    padding:0.5rem 0.3rem;
+    margin:1rem 0;
+    border:none;
+    outline:0;
+    border-radius: 5px;
+}
+.notification{
+    background-color: rgba(0,0,0,0.3);
+    padding:1rem;
+    position: absolute;
+    bottom: -50%;
+    
+}
+
+.show-notification{
+    background-color: rgba(0,0,0,0.3);
+    padding:1rem;
+    position: absolute;
+    bottom: 5%;
+    
+}
