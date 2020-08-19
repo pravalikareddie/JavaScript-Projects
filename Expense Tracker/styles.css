@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+}
+:root{
+     --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    width:350px;
+}
+h2{
+    padding:0.5rem 0;
+    text-align: center;
+}
+#balance{
+    padding-bottom:0.5rem;
+}
+#balance-sheet{
+    display: flex;
+    text-align: center;
+
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem 0;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 0.7rem;
+
+}
+#balance-sheet >div{
+    flex:1;
+}
+#balance-sheet div:first-of-type{
+border-right: 1px solid gray;
+}
+#money-plus{
+    color: rgb(113, 173, 113);
+    font-weight: bold;
+}
+#money-minus{
+    color:red;
+    font-weight: bold;
+}
+#transactions p{
+ border-bottom:1px solid gray;
+ padding:0.5rem 0;
+}
+.list{
+    margin:1rem 0;
+}
+#transactions .list li{
+padding:0.6rem;
+margin:0.5rem 0;
+list-style-type: none;
+box-shadow: var(--box-shadow);
+display: flex;
+justify-content: space-between;
+position: relative;
+}
+#transactions button {
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    background-color: red;
+    border:none;
+    outline: none;
+    padding:0.3rem;
+    color:white;
+    transform: translate(-100%,-50%);
+    opacity: 0; 
+cursor: pointer;
+    transition: opactiy 0.3s ease;
+}
+#transactions button:hover {
+    opacity: 1;
+}
+.minus{
+    border-right: 4px solid red;
+}
+
+.plus{
+    border-right: 4px solid green;
+}
+
+#new-transaction p{
+    border-bottom:1px solid gray;
+    padding:0.5rem 0;
+}
+label{
+    padding:0.6rem 0;
+    display: block;
+}
+input{
+    padding:0.5rem 0 0.5rem 0.5rem;
+    width: 100%;
+}
+input[type="submit"]{
+    margin:1rem 0;
+    border:none;
+    outline: none;
+    color:white;
+    cursor: pointer;
+    background-color:rgb(175, 99, 175)
+}
